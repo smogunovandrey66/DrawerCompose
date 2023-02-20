@@ -45,10 +45,7 @@ fun MainScreen() {
                         coroutineScope.launch {
                             drawerState.close()
                         }
-                        navController.navigate(Screens.ScreenDrawer.value){
-                            popUpTo = navController.graph.startDestinationId
-                            launchSingleTop = true
-                        }
+                        navController.navigate(Screens.ScreenDrawer.value)
                     }
                     ) {
                         Text(text = stringResource(id = R.string.item1))

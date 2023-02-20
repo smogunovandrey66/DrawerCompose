@@ -12,6 +12,11 @@
         android:theme="@style/Theme.DrawerCompose"
         tools:targetApi="31">
         <activity
+            android:name=".BindingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_binding"
+            android:theme="@style/Theme.DrawerCompose.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
